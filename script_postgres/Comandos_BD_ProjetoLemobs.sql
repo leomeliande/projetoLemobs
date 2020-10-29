@@ -105,6 +105,7 @@ VALUES
 	('Xbox 360', 'Microsoft'),
 	('Xbox One', 'Microsoft'),
 	('Nintendo Switch', 'Nintendo');
+  ('Windows', 'Microsoft');
 
 INSERT INTO genero(genero_nome)
 VALUES
@@ -136,3 +137,6 @@ VALUES
 	(4, 3, 'Halo 5: Guardians', '343 Industries', '27-Oct-2015'),
 	(4, 8, 'Need for Speed: Payback', 'EA', '10-Nov-2017'),
 	(1, 9, 'The Elder Scrolls V: Skyrim', 'Bethesda Game Studios', '11-Nov-2011'),
+  (2, 3, 'Call of Duty: Modern Warfare', 'Infinity Ward', '23-Aug-2019'),
+  (4, 3, 'Call of Duty: Black Ops Cold War', 'Treyarch', '13-Nov-2020'),
+  (6, 4, 'The Sims 4', 'Maxis', '02-Sep-2014');
