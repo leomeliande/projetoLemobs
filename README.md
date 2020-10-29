@@ -52,3 +52,12 @@ Clique em <b>Compartilhar</b> e depis em <b>Copiar link</b>. Esse link será alg
 Agora no nosso projeto em Angular, este link será colado no arquivo <b>src/app/app.component.ts</b>, como valor da variável <b>vizUrl</b>. Após isso, salve o projeto e execute-o com o comando: <pre>ng serve --open</pre>
 
 No navegador, em http://localhost:4200/, será exibido o dashboard, com as 5 telas em abas distintas.
+
+<br>
+<br>
+
+**Autor: Leonardo de Figueiredo Meliande**
+
+   <IMG SRC="https://pa1.narvii.com/6445/2effbe46653f3c5604386e6802c9e7ea8de0f46a_hq.gif">  
+
+Data da ultima atualização: 29/10/2020 :-)
