@@ -1,0 +1,2184 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook original-version='18.1' source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xml:base='https://prod-useast-b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='desafiolemobs_16038968081420' path='/t/projetolemobs/workbooks' revision='1.2' site='projetolemobs' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='plataforma (projetolemobs)' inline='true' name='federated.0djkvt211wpy8116zbzc31ce5kaj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.1pa7zz21evt6m115pe37j18tq43e'>
+            <connection authentication='username-password' class='postgres' dbname='projetolemobs' odbc-native-protocol='' one-time-sql='' port='5432' server='localhost' server-oauth='' server-userid='10988' username='postgres' workgroup-auth-mode='prompt' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='genero' table='[public].[genero]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='plataforma' table='[public].[plataforma]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='genero' table='[public].[genero]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='generos' table='[public].[generos]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='jogo' table='[public].[jogo]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='jogos_generos' table='[public].[jogos_generos]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='pc' table='[public].[pc]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='ps3' table='[public].[ps3]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='ps4' table='[public].[ps4]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='switch' table='[public].[switch]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='xbox360' table='[public].[xbox360]' type='table' />
+          <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='xboxone' table='[public].[xboxone]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[count]' value='[generos].[count]' />
+          <map key='[data_lancamento]' value='[jogo].[data_lancamento]' />
+          <map key='[desenvolvedor]' value='[jogo].[desenvolvedor]' />
+          <map key='[fabricante]' value='[plataforma].[fabricante]' />
+          <map key='[genero_id (genero)]' value='[genero].[genero_id]' />
+          <map key='[genero_id]' value='[jogo].[genero_id]' />
+          <map key='[genero_nome (generos)]' value='[generos].[genero_nome]' />
+          <map key='[genero_nome (jogos_generos)]' value='[jogos_generos].[genero_nome]' />
+          <map key='[genero_nome]' value='[genero].[genero_nome]' />
+          <map key='[jogo_id]' value='[jogo].[jogo_id]' />
+          <map key='[nome_jogo (jogo)]' value='[jogo].[nome_jogo]' />
+          <map key='[nome_jogo (jogos_generos)]' value='[jogos_generos].[nome_jogo]' />
+          <map key='[nome_jogo (pc)]' value='[pc].[nome_jogo]' />
+          <map key='[nome_jogo (ps3)]' value='[ps3].[nome_jogo]' />
+          <map key='[nome_jogo (switch)]' value='[switch].[nome_jogo]' />
+          <map key='[nome_jogo (xbox360)]' value='[xbox360].[nome_jogo]' />
+          <map key='[nome_jogo (xboxone)]' value='[xboxone].[nome_jogo]' />
+          <map key='[nome_jogo]' value='[ps4].[nome_jogo]' />
+          <map key='[plataforma_id (jogo)]' value='[jogo].[plataforma_id]' />
+          <map key='[plataforma_id]' value='[plataforma].[plataforma_id]' />
+          <map key='[plataforma_nome (pc)]' value='[pc].[plataforma_nome]' />
+          <map key='[plataforma_nome (ps3)]' value='[ps3].[plataforma_nome]' />
+          <map key='[plataforma_nome (ps4)]' value='[ps4].[plataforma_nome]' />
+          <map key='[plataforma_nome (switch)]' value='[switch].[plataforma_nome]' />
+          <map key='[plataforma_nome (xbox360)]' value='[xbox360].[plataforma_nome]' />
+          <map key='[plataforma_nome (xboxone)]' value='[xboxone].[plataforma_nome]' />
+          <map key='[plataforma_nome]' value='[plataforma].[plataforma_nome]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>plataforma_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[plataforma_id]</local-name>
+            <parent-name>[plataforma]</parent-name>
+            <remote-alias>plataforma_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plataforma_640A7204BF1C41179C70B63B87D8814D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome]</local-name>
+            <parent-name>[plataforma]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plataforma_640A7204BF1C41179C70B63B87D8814D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fabricante</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[fabricante]</local-name>
+            <parent-name>[plataforma]</parent-name>
+            <remote-alias>fabricante</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[plataforma_640A7204BF1C41179C70B63B87D8814D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genero_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[genero_id (genero)]</local-name>
+            <parent-name>[genero]</parent-name>
+            <remote-alias>genero_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[genero_B1D0CF5FFD63491296DBA61A0A8DA5D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genero_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genero_nome]</local-name>
+            <parent-name>[genero]</parent-name>
+            <remote-alias>genero_nome</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[genero_B1D0CF5FFD63491296DBA61A0A8DA5D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[generos]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[generos_B6D8F742B46A482881ACF087FBE09BE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genero_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genero_nome (generos)]</local-name>
+            <parent-name>[generos]</parent-name>
+            <remote-alias>genero_nome</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[generos_B6D8F742B46A482881ACF087FBE09BE8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jogo_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[jogo_id]</local-name>
+            <parent-name>[jogo]</parent-name>
+            <remote-alias>jogo_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogo_0C052CB083494D99B02AD32AA34554EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[plataforma_id (jogo)]</local-name>
+            <parent-name>[jogo]</parent-name>
+            <remote-alias>plataforma_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogo_0C052CB083494D99B02AD32AA34554EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genero_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[genero_id]</local-name>
+            <parent-name>[jogo]</parent-name>
+            <remote-alias>genero_id</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogo_0C052CB083494D99B02AD32AA34554EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (jogo)]</local-name>
+            <parent-name>[jogo]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogo_0C052CB083494D99B02AD32AA34554EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desenvolvedor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[desenvolvedor]</local-name>
+            <parent-name>[jogo]</parent-name>
+            <remote-alias>desenvolvedor</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogo_0C052CB083494D99B02AD32AA34554EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_lancamento</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[data_lancamento]</local-name>
+            <parent-name>[jogo]</parent-name>
+            <remote-alias>data_lancamento</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogo_0C052CB083494D99B02AD32AA34554EB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (jogos_generos)]</local-name>
+            <parent-name>[jogos_generos]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogos_generos_1406C26505D8466DAB6B3C83A96D0308]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genero_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genero_nome (jogos_generos)]</local-name>
+            <parent-name>[jogos_generos]</parent-name>
+            <remote-alias>genero_nome</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jogos_generos_1406C26505D8466DAB6B3C83A96D0308]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (pc)]</local-name>
+            <parent-name>[pc]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc_F16C7027BC984DA9A382B46BB0290540]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome (pc)]</local-name>
+            <parent-name>[pc]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc_F16C7027BC984DA9A382B46BB0290540]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (ps3)]</local-name>
+            <parent-name>[ps3]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ps3_099235CCD7A2429A9C58E4721F1C9AD2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome (ps3)]</local-name>
+            <parent-name>[ps3]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ps3_099235CCD7A2429A9C58E4721F1C9AD2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo]</local-name>
+            <parent-name>[ps4]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ps4_5E74286C907F42CA97B2E1EDE6180132]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome (ps4)]</local-name>
+            <parent-name>[ps4]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ps4_5E74286C907F42CA97B2E1EDE6180132]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (switch)]</local-name>
+            <parent-name>[switch]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome (switch)]</local-name>
+            <parent-name>[switch]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (xbox360)]</local-name>
+            <parent-name>[xbox360]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome (xbox360)]</local-name>
+            <parent-name>[xbox360]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nome_jogo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[nome_jogo (xboxone)]</local-name>
+            <parent-name>[xboxone]</parent-name>
+            <remote-alias>nome_jogo</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[xboxone_B95695CF5917468F92C4A6BE48A3EF68]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plataforma_nome</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[plataforma_nome (xboxone)]</local-name>
+            <parent-name>[xboxone]</parent-name>
+            <remote-alias>plataforma_nome</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[xboxone_B95695CF5917468F92C4A6BE48A3EF68]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:pc_F16C7027BC984DA9A382B46BB0290540:qk]&quot;' value='Windows' />
+          <alias key='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:ps3_099235CCD7A2429A9C58E4721F1C9AD2:qk]&quot;' value='PlayStation 3' />
+          <alias key='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:ps4_5E74286C907F42CA97B2E1EDE6180132:qk]&quot;' value='PlayStation 4' />
+          <alias key='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:switch_D1A4ED01E23F40648C0BA6FFD6E9D053:qk]&quot;' value='Nintendo Switch' />
+          <alias key='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4:qk]&quot;' value='Xbox 360' />
+          <alias key='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:xboxone_B95695CF5917468F92C4A6BE48A3EF68:qk]&quot;' value='Xbox One' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='genero' datatype='table' name='[__tableau_internal_object_id__].[genero_B1D0CF5FFD63491296DBA61A0A8DA5D9]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='generos' datatype='table' name='[__tableau_internal_object_id__].[generos_B6D8F742B46A482881ACF087FBE09BE8]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='jogo' datatype='table' name='[__tableau_internal_object_id__].[jogo_0C052CB083494D99B02AD32AA34554EB]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='jogos_generos' datatype='table' name='[__tableau_internal_object_id__].[jogos_generos_1406C26505D8466DAB6B3C83A96D0308]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='pc' datatype='table' name='[__tableau_internal_object_id__].[pc_F16C7027BC984DA9A382B46BB0290540]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='plataforma' datatype='table' name='[__tableau_internal_object_id__].[plataforma_640A7204BF1C41179C70B63B87D8814D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='ps3' datatype='table' name='[__tableau_internal_object_id__].[ps3_099235CCD7A2429A9C58E4721F1C9AD2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='ps4' datatype='table' name='[__tableau_internal_object_id__].[ps4_5E74286C907F42CA97B2E1EDE6180132]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='switch' datatype='table' name='[__tableau_internal_object_id__].[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='xbox360' datatype='table' name='[__tableau_internal_object_id__].[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='xboxone' datatype='table' name='[__tableau_internal_object_id__].[xboxone_B95695CF5917468F92C4A6BE48A3EF68]' role='measure' type='quantitative' />
+      <column caption='Data Lancamento' datatype='date' name='[data_lancamento]' role='dimension' type='ordinal' />
+      <column caption='Desenvolvedor' datatype='string' name='[desenvolvedor]' role='dimension' type='nominal' />
+      <column caption='Fabricante' datatype='string' name='[fabricante]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Genero Id (Genero)' datatype='integer' name='[genero_id (genero)]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[genero_id]' role='dimension' type='ordinal' />
+      <column caption='Generos' datatype='string' name='[genero_nome (generos)]' role='dimension' type='nominal' />
+      <column caption='Gêneros' datatype='string' name='[genero_nome (jogos_generos)]' role='dimension' type='nominal' />
+      <column caption='Genero' datatype='string' name='[genero_nome]' role='dimension' type='nominal' />
+      <column caption='Jogo Id' datatype='integer' name='[jogo_id]' role='dimension' type='ordinal' />
+      <column caption='Nome do jogo' datatype='string' name='[nome_jogo (jogo)]' role='dimension' type='nominal' />
+      <column caption='Jogo' datatype='string' name='[nome_jogo (jogos_generos)]' role='dimension' type='nominal' />
+      <column caption='Nome Jogo (Pc)' datatype='string' name='[nome_jogo (pc)]' role='dimension' type='nominal' />
+      <column caption='Nome Jogo (Ps3)' datatype='string' name='[nome_jogo (ps3)]' role='dimension' type='nominal' />
+      <column caption='Nome Jogo (Switch)' datatype='string' name='[nome_jogo (switch)]' role='dimension' type='nominal' />
+      <column caption='Nome Jogo (Xbox360)' datatype='string' name='[nome_jogo (xbox360)]' role='dimension' type='nominal' />
+      <column caption='Nome Jogo (Xboxone)' datatype='string' name='[nome_jogo (xboxone)]' role='dimension' type='nominal' />
+      <column caption='Nome Jogo (Ps4)' datatype='string' name='[nome_jogo]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Plataforma Id (Jogo)' datatype='integer' name='[plataforma_id (jogo)]' role='dimension' type='ordinal' />
+      <column caption='Plataforma Id' datatype='integer' name='[plataforma_id]' role='dimension' type='ordinal' />
+      <column caption='Plataforma Nome (Pc)' datatype='string' name='[plataforma_nome (pc)]' role='dimension' type='nominal' />
+      <column caption='Plataforma Nome (Ps3)' datatype='string' name='[plataforma_nome (ps3)]' role='dimension' type='nominal' />
+      <column caption='Plataforma Nome (Ps4)' datatype='string' name='[plataforma_nome (ps4)]' role='dimension' type='nominal' />
+      <column caption='Plataforma Nome (Switch)' datatype='string' name='[plataforma_nome (switch)]' role='dimension' type='nominal' />
+      <column caption='Plataforma Nome (Xbox360)' datatype='string' name='[plataforma_nome (xbox360)]' role='dimension' type='nominal' />
+      <column caption='Plataforma Nome (Xboxone)' datatype='string' name='[plataforma_nome (xboxone)]' role='dimension' type='nominal' />
+      <column caption='Plataforma' datatype='string' name='[plataforma_nome]' role='dimension' type='nominal' />
+      <column-instance column='[__tableau_internal_object_id__].[pc_F16C7027BC984DA9A382B46BB0290540]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:pc_F16C7027BC984DA9A382B46BB0290540:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[ps3_099235CCD7A2429A9C58E4721F1C9AD2]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ps3_099235CCD7A2429A9C58E4721F1C9AD2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[ps4_5E74286C907F42CA97B2E1EDE6180132]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ps4_5E74286C907F42CA97B2E1EDE6180132:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:switch_D1A4ED01E23F40648C0BA6FFD6E9D053:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[xboxone_B95695CF5917468F92C4A6BE48A3EF68]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:xboxone_B95695CF5917468F92C4A6BE48A3EF68:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[fabricante]' derivation='None' name='[none:fabricante:nk]' pivot='key' type='nominal' />
+      <column-instance column='[genero_nome]' derivation='None' name='[none:genero_nome:nk]' pivot='key' type='nominal' />
+      <column-instance column='[plataforma_nome]' derivation='None' name='[none:plataforma_nome:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Inclusões (Fabricante,Plataforma Nome)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:fabricante:nk]' />
+          <groupfilter function='level-members' level='[none:plataforma_nome:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:genero_nome:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ação/Aventura&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Luta&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Esportes&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Tiro/Shooter&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RPG&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Corrida&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Musica/Ritmo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Construção/Gerenciamento&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Simulador de vida&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brazil&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='genero' id='genero_B1D0CF5FFD63491296DBA61A0A8DA5D9'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='genero' table='[public].[genero]' type='table' />
+            </properties>
+          </object>
+          <object caption='generos' id='generos_B6D8F742B46A482881ACF087FBE09BE8'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='generos' table='[public].[generos]' type='table' />
+            </properties>
+          </object>
+          <object caption='jogo' id='jogo_0C052CB083494D99B02AD32AA34554EB'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='jogo' table='[public].[jogo]' type='table' />
+            </properties>
+          </object>
+          <object caption='jogos_generos' id='jogos_generos_1406C26505D8466DAB6B3C83A96D0308'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='jogos_generos' table='[public].[jogos_generos]' type='table' />
+            </properties>
+          </object>
+          <object caption='pc' id='pc_F16C7027BC984DA9A382B46BB0290540'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='pc' table='[public].[pc]' type='table' />
+            </properties>
+          </object>
+          <object caption='plataforma' id='plataforma_640A7204BF1C41179C70B63B87D8814D'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='plataforma' table='[public].[plataforma]' type='table' />
+            </properties>
+          </object>
+          <object caption='ps3' id='ps3_099235CCD7A2429A9C58E4721F1C9AD2'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='ps3' table='[public].[ps3]' type='table' />
+            </properties>
+          </object>
+          <object caption='ps4' id='ps4_5E74286C907F42CA97B2E1EDE6180132'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='ps4' table='[public].[ps4]' type='table' />
+            </properties>
+          </object>
+          <object caption='switch' id='switch_D1A4ED01E23F40648C0BA6FFD6E9D053'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='switch' table='[public].[switch]' type='table' />
+            </properties>
+          </object>
+          <object caption='xbox360' id='xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='xbox360' table='[public].[xbox360]' type='table' />
+            </properties>
+          </object>
+          <object caption='xboxone' id='xboxone_B95695CF5917468F92C4A6BE48A3EF68'>
+            <properties context=''>
+              <relation connection='postgres.1pa7zz21evt6m115pe37j18tq43e' name='xboxone' table='[public].[xboxone]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_id]' />
+              <expression op='[genero_id (genero)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' unique-key='true' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='genero_B1D0CF5FFD63491296DBA61A0A8DA5D9' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_id]' />
+              <expression op='[count]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' unique-key='true' />
+            <second-end-point object-id='generos_B6D8F742B46A482881ACF087FBE09BE8' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_id]' />
+              <expression op='[plataforma_id (jogo)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' unique-key='true' />
+            <second-end-point object-id='jogo_0C052CB083494D99B02AD32AA34554EB' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[fabricante]' />
+              <expression op='[genero_nome (jogos_generos)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='jogos_generos_1406C26505D8466DAB6B3C83A96D0308' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_nome]' />
+              <expression op='[plataforma_nome (pc)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='pc_F16C7027BC984DA9A382B46BB0290540' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_nome]' />
+              <expression op='[plataforma_nome (ps3)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='ps3_099235CCD7A2429A9C58E4721F1C9AD2' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_nome]' />
+              <expression op='[plataforma_nome (ps4)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='ps4_5E74286C907F42CA97B2E1EDE6180132' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_nome]' />
+              <expression op='[plataforma_nome (switch)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='switch_D1A4ED01E23F40648C0BA6FFD6E9D053' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_nome]' />
+              <expression op='[plataforma_nome (xbox360)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[plataforma_nome]' />
+              <expression op='[plataforma_nome (xboxone)]' />
+            </expression>
+            <first-end-point object-id='plataforma_640A7204BF1C41179C70B63B87D8814D' />
+            <second-end-point object-id='xboxone_B95695CF5917468F92C4A6BE48A3EF68' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Jogos e suas desenv.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Listagem de jogos e suas desenvolvedoras</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plataforma (projetolemobs)' name='federated.0djkvt211wpy8116zbzc31ce5kaj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0djkvt211wpy8116zbzc31ce5kaj'>
+            <column caption='Desenvolvedor' datatype='string' name='[desenvolvedor]' role='dimension' type='nominal' />
+            <column caption='Nome do jogo' datatype='string' name='[nome_jogo (jogo)]' role='dimension' type='nominal' />
+            <column-instance column='[desenvolvedor]' derivation='None' name='[none:desenvolvedor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[nome_jogo (jogo)]' derivation='None' name='[none:nome_jogo (jogo):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' direction='ASC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='36' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='9' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='auto' />
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:desenvolvedor:nk]' value='194' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='44' />
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='152' />
+            <format attr='text-align' data-class='subtotal' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='left' />
+            <format attr='text-align' data-class='total' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='left' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='#f2f6f7' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:desenvolvedor:nk]' value='#f2f6f7' />
+            <format attr='height' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:desenvolvedor:nk]' value='36' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#3aa5a7' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#3aa5a7' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='font-size' scope='cols' value='11' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-style' scope='rows' value='normal' />
+            <format attr='font-family' scope='rows' value='Tableau Medium' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-style' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='normal' />
+            <format attr='font-family' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='Tableau Light' />
+            <format attr='vertical-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='center' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='10' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='normal' />
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='#000000' />
+            <format attr='wrap' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='on' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='left' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.53773480653762817' />
+                <format attr='mark-color' value='#3aa5a7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]</rows>
+        <cols>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:desenvolvedor:nk]</cols>
+      </table>
+      <simple-id uuid='{6590FE7D-A713-4961-BE8C-EA2EFACF662B}' />
+    </worksheet>
+    <worksheet name='Jogos e suas platf.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Listagem de jogos e suas plataformas</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plataforma (projetolemobs)' name='federated.0djkvt211wpy8116zbzc31ce5kaj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0djkvt211wpy8116zbzc31ce5kaj'>
+            <column caption='Nome do jogo' datatype='string' name='[nome_jogo (jogo)]' role='dimension' type='nominal' />
+            <column-instance column='[nome_jogo (jogo)]' derivation='None' name='[none:nome_jogo (jogo):nk]' pivot='key' type='nominal' />
+            <column-instance column='[plataforma_nome]' derivation='None' name='[none:plataforma_nome:nk]' pivot='key' type='nominal' />
+            <column caption='Plataforma' datatype='string' name='[plataforma_nome]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <alphabetic-sort column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' direction='ASC' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='251' />
+            <format attr='height' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='36' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='9' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='44' />
+            <format attr='height' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='36' />
+            <format attr='text-align' data-class='subtotal' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='left' />
+            <format attr='text-align' data-class='total' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='left' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='#f2f6f7' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='#f2f6f7' />
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='152' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#3aa5a7' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#3aa5a7' />
+            <format attr='font-size' value='11' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='font-size' scope='cols' value='11' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-style' scope='rows' value='normal' />
+            <format attr='font-family' scope='rows' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-style' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='normal' />
+            <format attr='font-family' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='Tableau Light' />
+            <format attr='vertical-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='center' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='10' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='10' />
+            <format attr='font-family' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='Tableau Light' />
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='#333333' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='normal' />
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='#000000' />
+            <format attr='wrap' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='on' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]' value='left' />
+            <format attr='vertical-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='auto' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='auto' />
+            <format attr='wrap' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]' value='auto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.53773480653762817' />
+                <format attr='mark-color' value='#3aa5a7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]</rows>
+        <cols>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]</cols>
+      </table>
+      <simple-id uuid='{FDDB8757-E61E-4426-99C7-74ACF3CD249A}' />
+    </worksheet>
+    <worksheet name='Jogos por console'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Quantidade de jogos por console</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plataforma (projetolemobs)' name='federated.0djkvt211wpy8116zbzc31ce5kaj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0djkvt211wpy8116zbzc31ce5kaj'>
+            <column-instance column='[__tableau_internal_object_id__].[pc_F16C7027BC984DA9A382B46BB0290540]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:pc_F16C7027BC984DA9A382B46BB0290540:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[ps3_099235CCD7A2429A9C58E4721F1C9AD2]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ps3_099235CCD7A2429A9C58E4721F1C9AD2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[ps4_5E74286C907F42CA97B2E1EDE6180132]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ps4_5E74286C907F42CA97B2E1EDE6180132:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:switch_D1A4ED01E23F40648C0BA6FFD6E9D053:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='pc' datatype='integer' name='[__tableau_internal_object_id__].[pc_F16C7027BC984DA9A382B46BB0290540]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[xboxone_B95695CF5917468F92C4A6BE48A3EF68]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:xboxone_B95695CF5917468F92C4A6BE48A3EF68:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='ps3' datatype='integer' name='[__tableau_internal_object_id__].[ps3_099235CCD7A2429A9C58E4721F1C9AD2]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='pc' datatype='table' name='[__tableau_internal_object_id__].[pc_F16C7027BC984DA9A382B46BB0290540]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='ps4' datatype='integer' name='[__tableau_internal_object_id__].[ps4_5E74286C907F42CA97B2E1EDE6180132]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='ps3' datatype='table' name='[__tableau_internal_object_id__].[ps3_099235CCD7A2429A9C58E4721F1C9AD2]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='switch' datatype='integer' name='[__tableau_internal_object_id__].[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='ps4' datatype='table' name='[__tableau_internal_object_id__].[ps4_5E74286C907F42CA97B2E1EDE6180132]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='xbox360' datatype='integer' name='[__tableau_internal_object_id__].[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='switch' datatype='table' name='[__tableau_internal_object_id__].[switch_D1A4ED01E23F40648C0BA6FFD6E9D053]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='xboxone' datatype='integer' name='[__tableau_internal_object_id__].[xboxone_B95695CF5917468F92C4A6BE48A3EF68]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='xbox360' datatype='table' name='[__tableau_internal_object_id__].[xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='xboxone' datatype='table' name='[__tableau_internal_object_id__].[xboxone_B95695CF5917468F92C4A6BE48A3EF68]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:ps3_099235CCD7A2429A9C58E4721F1C9AD2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:ps4_5E74286C907F42CA97B2E1EDE6180132:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:xboxone_B95695CF5917468F92C4A6BE48A3EF68:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:switch_D1A4ED01E23F40648C0BA6FFD6E9D053:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:pc_F16C7027BC984DA9A382B46BB0290540:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:ps3_099235CCD7A2429A9C58E4721F1C9AD2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:ps4_5E74286C907F42CA97B2E1EDE6180132:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:xbox360_9F3E231BCF6D46B7964BDC6B5282ACA4:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:xboxone_B95695CF5917468F92C4A6BE48A3EF68:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:switch_D1A4ED01E23F40648C0BA6FFD6E9D053:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:pc_F16C7027BC984DA9A382B46BB0290540:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='181' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='bold' />
+            <format attr='font-weight' data-class='total' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='normal' />
+            <format attr='text-format' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='auto' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='normal' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='164' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='#3aa5a7' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='#ffffff' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='9' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='auto' />
+            <format attr='vertical-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='auto' />
+            <format attr='wrap' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='auto' />
+            <format attr='text-format' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='N' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='bold' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='bold' />
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='' />
+            <format attr='display-alternate-text' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='false' />
+            <format attr='omit-on-special' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='true' />
+            <format attr='break-on-special' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='true' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='10' />
+            <format attr='font-family' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]' value='Tableau Book' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.29585635662078857' />
+                <format attr='mark-transparency' value='239' />
+                <format attr='mark-color' value='#3aa5a7' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='905' />
+                <format attr='maxwidth' value='905' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='436' />
+                <format attr='maxheight' value='436' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0djkvt211wpy8116zbzc31ce5kaj].[Multiple Values]</rows>
+        <cols>[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{66303302-5D6E-43BC-97F4-79622E2CF8EE}' />
+    </worksheet>
+    <worksheet name='Jogos por gênero 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Quantidade de jogos por gênero</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plataforma (projetolemobs)' name='federated.0djkvt211wpy8116zbzc31ce5kaj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0djkvt211wpy8116zbzc31ce5kaj'>
+            <column datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column caption='Generos' datatype='string' name='[genero_nome (generos)]' role='dimension' type='nominal' />
+            <column-instance column='[genero_nome (generos)]' derivation='None' name='[none:genero_nome (generos):nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='576' />
+            <format attr='height' value='444' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[sum:count:qk]' value='#3aa5a7' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (generos):nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[sum:count:qk]' value='bold' />
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[sum:count:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (generos):nk]' value='Gêneros'>
+              <formatted-text>
+                <run>Gêneros</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (generos):nk]' />
+              <wedge-size column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[sum:count:qk]' />
+              <size column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[sum:count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='auto' />
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='10' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#1e5758' />
+                <format attr='font-family' value='Tableau Light' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6151933670043945' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4BB0D841-6557-405F-A758-652D512542E4}' />
+    </worksheet>
+    <worksheet name='Jogos por gênero 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Gêneros e seus jogos</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='plataforma (projetolemobs)' name='federated.0djkvt211wpy8116zbzc31ce5kaj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0djkvt211wpy8116zbzc31ce5kaj'>
+            <column caption='Gêneros' datatype='string' name='[genero_nome (jogos_generos)]' role='dimension' type='nominal' />
+            <column caption='Jogo' datatype='string' name='[nome_jogo (jogos_generos)]' role='dimension' type='nominal' />
+            <column-instance column='[genero_nome (jogos_generos)]' derivation='None' name='[none:genero_nome (jogos_generos):nk]' pivot='key' type='nominal' />
+            <column-instance column='[nome_jogo (jogos_generos)]' derivation='None' name='[none:nome_jogo (jogos_generos):nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='74' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='normal' />
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='auto' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='72' />
+            <format attr='background-color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='#3aa5a7' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='normal' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#333333' />
+            <format attr='font-family' value='Tableau Light' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+            <format attr='text-align' value='left' />
+            <format attr='vertical-align' value='center' />
+            <format attr='wrap' value='on' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-style' scope='cols' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='auto' />
+            <format attr='vertical-align' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='center' />
+            <format attr='font-weight' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='bold' />
+            <format attr='font-size' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='9' />
+            <format attr='color' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='#ffffff' />
+            <format attr='wrap' field='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]' value='on' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogos_generos):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.3314917087554932' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E150F2FA-C2CF-41A0-BD63-BF553D28DAA3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Jogos por console'>
+      <cards>
+        <edge name='left'>
+          <strip size='170'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[:Measure Names]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_id (genero):ok]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome:nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (ps3):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome (ps3):nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{95DCFAB4-39BA-4749-8381-3C7241CC36E9}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Jogos e suas platf.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D307E73F-F83B-4546-8FC3-02BE441E519E}' />
+    </window>
+    <window class='worksheet' name='Jogos e suas desenv.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:desenvolvedor:nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9C27D90F-D0C1-4774-9FCE-AD0635400BD0}' />
+    </window>
+    <window class='worksheet' name='Jogos por gênero 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (generos):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_id:ok]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (generos):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome:nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (generos):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{50D42EF6-AB14-4010-B7F6-E5BF342A166F}' />
+    </window>
+    <window class='worksheet' name='Jogos por gênero 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogos_generos):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[__tableau_internal_object_id__].[cnt:jogos_generos_1406C26505D8466DAB6B3C83A96D0308:qk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome (jogos_generos):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:genero_nome:nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:jogo_id:ok]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogo):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:nome_jogo (jogos_generos):nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[none:plataforma_nome:nk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[sum:count:qk]</field>
+            <field>[federated.0djkvt211wpy8116zbzc31ce5kaj].[yr:data_lancamento:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0F5B0347-90A6-4163-8BB4-8F895874C837}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Jogos e suas desenv.' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Jogos e suas platf.' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO3d93Mc553n8ffkPIMBMMiBJECCIChGMUskJYqKlqhAWtZ613Z5g3e3rm7r
+      6v6AVdXt/XBXF8q1e5a90ooKK2slS6JJihKDwAhCyCAiQeQ0A2AwmMEMJqe+HyDbYhiKVMkM
+      7uf1Ezkdpp+Z/qCffvrbPQpJkiQEQaaUd3sDBOFuEgEQZE19tzfgXlPndNI8NX23N0O4Q0QA
+      rtE96+Gj/oG7vRnCHSK6QIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkA
+      CLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqwpxFMhrjbk8zE2H7jbmyHcISIA14gl
+      EsSTqbu9GcIdIrpAgqyJAAiyJgIgyJoIwDdIJxPEEsm7vRnCTaTjMeKpb3cqK54LdAO99cfp
+      cQWx5y1ja1UOozE9q8vyv3E531g/qYIV5Oqufn1goJ/ly1fgnpjEVlKMTqHIuI7w3ASnzzeR
+      1ljYvnsXuWZdxnnlrOHERziDCgqXrGa1LYwrZzUr7ZpvXM413I+tbAWmr/Z81auvvvrqH3dT
+      7y+pdJpZ1xwb9z6GcW4AnyqLlFJNdLKX2rPnmUuY8U0OkVtUSPeldmJzk9TWNRDXmOk5c5i2
+      0XnKHAZOnThF78A4Fk2co0ePEVHaMKSj6O0WGk8do6WtA62jmEunPqOj5zKuhTRLS/JQavQs
+      q1qJNuQhbsrFbhIBuBGPL8iuPXtYmLgMah0JSw7uzjou1F8kqs5hZnICR4GDjrY2ApMDnG9o
+      RWGw8OXxQ/RNRSnNljj+ea3oAt1IwDPCkY8+psutosC0+Jpap0Ol0uAaHaa0QM/lnj6iSjtq
+      tRKFUovFZOHBrTt4/JmnsJmNmPUqvPMe1Nal7Hj4YXZvqSEVi7EQnKewcjMvHthPcOIK1uIq
+      9r34IlZVGACVRkfH+eMMzUUwaFR38VO4t7lHujj08SfMJKxYtIAEWr0OhUqLc8JJljaKc7CT
+      lLEMhVKBUmPAnu1g846H+d4zj6JVaTFolSIAN2LNXcpz+/fzzJMPof3qtcHBIfJLyrEa1Vjz
+      ljHa10FxkQPUegocFsZHXSjUEt0tbYz19REz5lKYn4MCiaDHSc/gJGlApzUwOdLJlxfOIFkW
+      u1WKr3WJPBMDpAy5mIgyF4zf+cbfJ/KWPsAL+/ez56F1qAEpGWV40k1x2RIMGomS0hLqGgdY
+      WZGFWm8l365hZNRNOhmmvbWLicEBVNmF4kLYtWKJBMFgCLVej5LFk+CEpECKBfEFE1isZow6
+      BY31bWzYsQ1FLITHGyArNw+9KsXsrI+sHDs+zxxakwWb2UQsNE8oqcZm1KLW6Ygu+JgPp8jP
+      zyERS6DX64hGo+j1elKJKLOzc6DW48jNRqXMfL4gZ7FoFK1ej4LFk+CkSkN8wUswocRmNqJT
+      RrjYOsKObeuJhfz4AhFy8wtQJMN4vGFyc8x4PPMiANe6lSvBUwMdhM1LqCi03aGtEm5PmoGO
+      NqxLVpNv0990ThGAa4hSCHkR5wCCrIkACLJ21YWwSCRCPC7vkYdEMkUiJbpAcnFVANJAUuZn
+      BDqdDrNajL/LxVUBUKnUaHXyHnbTqtXoNKJCRC7EOYAgayIAgqyJAAiyljEA/ukhTp44wcWW
+      XtIkmZ2eI/216ZIkMdl/iTNn65hbiNDV3fMNbyXR39lN7LvZbkH4TmQMgGdkAGNxBRZfGw3j
+      CQJ+P5KUoPaTdzj1ZQ/J1AztHR5KCrIIhaLMTA5x5Ndv0TY4QyLs4/D7b9HYO4mUilN//CNO
+      1Hfj9/pIk2JkePQONlEQMssYgHhkngtfnKTNqWZFvgr31AzDTefJ2/4ihSk3E/NqVMkxWnpG
+      MRp1BL0Btj/3Mt6RTnqam9jw1MvEh9q53N+MZslOtqwqIRHxc+HEpySNOXeyjYKQUcbxPoO1
+      gB/+zcvox7+gt9+PBkhIKsx6NWmdnnQqweYnX0EXG+F8Sz/20qXkmg3odGokhYReo8Ks05GU
+      FOgMOjQaFYmIHy8GqjXi1EO4N2QMgEav4tDB1zBnFfD8/ix84wWUlGXz2cfvIzmqeWqNiS8O
+      /YaZhIEnnnmaiM8NQFFxCQVZej79+F2yq7bxyLISznx2lPGcVax5YCtbywu4MjBBSc5K5H3F
+      QbgXXFUNGo0nZF8GIC6EyYvoiwiyJgIgyJoIgCBrIgCCrIkACLJ2+wFIJ4lE46RiYWI3GDCS
+      JAm3c4JA5Lu/sSYaDpPpdoVYOHJVqYYg3IqMAYjMT3Hovbc4+M5hQl+fEPbQ1DuMv6+JgeD1
+      y6UWhjhxuoOFSAIpleDDf/s/vPHGQeo7h6+bt7+zk8RNNq6/4Rg//5df8Na7H+CNSnQ2NWWc
+      v7ep+artlJJR6o5/wr/+6xtc6BjMGBxB3jIMeEv0d/Wy5dlXyNNKRPyT/PqDo3jV+fzt97df
+      N3dn3Wc0dI9TUrOdLO8ZuvvVbHo0jmTVUlS9hf1bNnH+6AlG8tSkojrKVKM0+fM4+9ZBHDue
+      ZEuhiYrND3G54SJLlpeSVOVQlGtCoTTx/b/8W7z1HzMZWDzcJBZcfPgfR/BrHfzoxV18/sFH
+      xHMqWGHVEg+4Od81xvZtDzLvGkVftJa/2ltG67laxi97OVzXiTqt5tn9z9B65DDz+lxeeP5Z
+      bAZxB5hcZbziE0yqqTbrUCtBHVOhN+lZ6LjCDNcGIE0QK3/9s5/R1VRH6dZdULGMlcVW0snF
+      v9dKlZbyXCPecAJDSoWUjqDOWsoTz+1jze5dLIxdpv9yBwsJPXn5Zb9fc8g7waF//RXVleWs
+      10i4AAk1RqOW4aFRpofsLH/2r1mXp6TpyDsc/PUQP/rzv0CtVBBJJbFbHShVauw2HeGgxM59
+      P2RFwknP3CwqpQqzLQuNSlyPlrOMAViSr+XI4U+xaE2UlaYJ6wpYXibdoJ+tJBWc4eTJ48Sx
+      sPyqP6YSE/2XOBWYxxczsrdSyelzdfQvDFHw5G7ioWnONXSx98FlnDnxLqv2/Tkhv4e40ozd
+      oketNVJekQcxN17/YiG1d6iLoLGA5WV61Dl5DJw5iq+0FIt5CS89lUtPTy/Zm9aQn53Lpydr
+      GewzE0rq2FWR4LcXahlTJlj94AbCRcW4fG68/ihGh/G7/lyF+0TGUggpncIz4yKS1lGUb2V6
+      chqDOQtrtplkPI1WkSSpNqJTQTIWYtI1S25hMSZNmmhSg0Gn/OqEeJRwUk1hcRE6lcSMy4lC
+      o8eWkw8RHzOBBGWFNk6fPMvWPY+jSUVIKbQYdGrCgTmm3D60RhvFhQ7ikTBanRrnhBO9xY7d
+      biU4N00orSPHYkRr1BMJhjCYTCgVCsKBOWbmguQXFZMaaeZiKIu1ZYUU5FqZm3ISVRooys/l
+      608fFKUQ8nJP1AI5r7Qwqy5lbUX+H61ALu6dxq/PxWG8+c4tAiAv90QA7iUiAPJy+9cBUlGc
+      03O//69ndopoXIzAC/enDAGQ8I518eavfsXrr3+IP53C7Rxn2uOHVJjBUReSlGJ6cpT2S+2E
+      YykiHieNnX0kI5P87//xS8JpifPnz5GMhxkfGWYuECaZiBIKzDPrXbizrRSEDDIe6wdG5vjB
+      X/0Mowpmh1o53zGNKuJn8/eeBGCi60taxgIE/F42AAZ7FoleF9N9btbvfgDXlIu0ZCfsneLy
+      lUHcoT52r9Rx5LSTHY8/hiPbcqfaKAgZZe4CpZP87of3wr4w255+hmd2luOcXezujPrSPP/s
+      02ysWbZ44qoyYjHE6HCn2LysjPG2JuwVJXinJxkfH6F3cByF2sDOZ/axrqroj98yQbgFGQNQ
+      XVPOR2+8xhuvf4i6rIiTB1/jrRMuasrUGPQ6Higx8Nr/e43zbUMolApAQYHNQEihw5STw4w/
+      SHmWhUQ8gaTSUVaYh8Zgxip+9E24h4hRoGuIUSB5EeXQgqyJAAiyljEAUjpJf0cjdU3dXNUp
+      injpGpxgYbiT0dD1y6VjPj548y36nD6kdJrOxjOcOVfPfPj6Qmb/3NxNa/i9rlGmfItvEpqb
+      ZHDCc+P5+vuZikZvsiZBuLGM1wEmOusZD2rJ0SpYiPg4+us3OV7fDak43kCIxIKXYHJx7rBn
+      hHfefJehaT+Nx9+heSiwuJZ0kgm3l5I8M58ePs5C0I93PkjKP8ng6Aj//N//idc/PsHE2OJv
+      6M6MT+CeGcflWdzp3VcaONs2jESagS9PcaZnjGTUy8fvvEnLFSdSOklz7SHe/fej+ONJrjTX
+      8sHRc8TjcZwTQ3x2spaJ4SHOfP4hn9d1khY3BQjXyHgEGJ9X8Oj29VSvq8EIVK3fQbD3Et7r
+      5pSoa+jm+z98kdGOZlZv38WLr/yEqqIsQIEtp4Dl1WvYXW7istvD9Kyf5NwgHvUSnnhuHz95
+      8XHivlGGp+fpvDKAI6+UwpzF6kyVqYAstR//QoAFtY1cg5LmugZ2vvRnLIx3MdFZTyR/Ky89
+      vYNUxEnXUJgVZg91XU4OffQx1es2M9XbTO7aJzCn3eKKtXCdjAGwqsIMuxeI+v04hztp7xvC
+      PT7FDXo9qLValEoVeq2K340pff3Xz1PxIF2uIPlaiWQqwdzsLKAgmYyTSkuULaukv+4YhuJq
+      FArFVcsuL86mvakZx9LVX72ZBp1ahVanIxZKYMu1EI1ESadiuCedTIeUZBmUrN/xCEvzLGjM
+      RSwpsqHT6VGI+8KEa2QIgIKVGzczcOEwvzn+Jdb8clLzbio3b8KsMVLssKPPLSZHuzjv6uUF
+      vPf2+5hKV2Iy5VKwOAGFQoF3pJO33vstSzZvozgnl5G20zRNpikwQ4FDx0dHz6Kx5qFSa6gq
+      z2X+a12grPxiHGXL0evNLC/LpaLYwZoHVnDsvbdJGAtZsnET42d+Q4srgCOrgk0bCnC5Q+Q5
+      7BTm5wPgKC5CC+TnF6IWN78IQCiR4P+2tPJfTp+9N64DOC/X0zih5fm9D15Vm383iOsAf/p+
+      3trGh1f6gZvUAt1JxdXbebH6bm+FIBeTC394moO4DiDIztPLlqD66jzzxl0gSWJwaIiKyko6
+      Tx/Hse0JLH4XEZOdPMv198+Gxlt5/fMeDnz/+xTb9XeuJX8Eogv0p0+SJMYCAZzBYIYukALC
+      znG8ZUXMR7zMdUyQp5kgv9LIkXd+zawyh5deeIRLZ84xl1aRHmzAp1tB0DPKe5+cQ5u3ikdq
+      irg01kVCXUKJYo7GgRkeeeoFKgpEGbRwdykUCpbYbCyx2TKPAhUszWGiuRPDit2o40OEgmAx
+      GzGadMz09jI272F0KsTTTz7Fnkcf48Cf/4gl+Vlo1CqG2xtxeZz41SU8vr6EUxdbiQU8nL7Q
+      cGdbKgjfIOOxPjurkGO1x3imZh2uIS+TuauQRhtxW1eza5MNhRKWr3wAg1ZF5Ktlei61UrJ6
+      G9mmLpJpKw+sLkepgZq1W1haUYxan32HmiUItybzMKiUYGx4kqKlS4n7pgkoLRTYNLTV16Oz
+      l1JeWUAylMaebSEemCNmyEEX89DY0kPJ0gqybVbUJgMmjQbf1BCXLo9TvWErBVmGu9XWWyLO
+      AeTlnrgOcC8RAZAXMQwqyJoIgCBrIgCCrIkACLImAiDImgiAIGsZfyFmbqyLIycaSEgSW/bu
+      p7pAg8s9T2FJKYr4Aq5pD9kFJehUKRKRMHF0JMNeUlobhbk2IMX7v/hf+LGw8dF9bFpZfEcb
+      Jgi34uaPRvyLV2hpbMJqkGj98iILSQXjswtU5UpcuTLBwpVxKow+2gejrFtfxVBfH9aSKgp3
+      boTUHNF0PtXrali5JP9OtkkQblnGACjSKZJKLaVlWtov9OBxXSal1ZGDBXtsnvGxMWbTWVRu
+      LOSpF7aRZ0oyP9HPuHOGOKBV2Hn8ezsJ+qc5U9/Bc49uvIPNEoRbkzEAq2qW8MnbB4mmYlRv
+      e4kSu5f2ITfZdjuJhVnQmSm15mCw2DDq1EQjs8y4A0hG8+IKYkGaGy4w7Quzduczd6o9gnBb
+      RCnENUQphLyIUSBB1kQABFkTARBkTQRAkDURAEHWRAAEWRMBEGRNBECQNREAQdZEAARZy3jN
+      PxHxc+GLEwzPRtn77HO4ei7z4O5taG6yspjHiVttpzTr+scnJmZ7+JcPmnnh5f3o57r4+GQT
+      KUnBqi1P8tjWFTfdyEQkQltnJ1u2bAFgZmwQc3ElJlGxIHwLM6EQ/7OphfGFQOb7Aa60NlK0
+      YS+78vQsROL0OPt472AXeSu2sbPSxJFjtejyVrB3+wqOHzuGvugBsmabODGS4MAPfsy6pTn0
+      NZ3iQscYax56gnDjfzAdqQCgYOU2XjY7mI0aqFqSw4kPDzKjKuaFp2pwjusot8zj1OUx03Kc
+      /hk139u3h/72c/R0tLNh7/dxxMPEQ5McPXKBhUgQm8lAUJXDK89u4cThT/ClHbz8yj6Mqjv4
+      qQr3jYPdPTRMTQE3OQLMJw1st6d5/99fw1C6l5ycUg7s2UVTfT3jE/M8duAnRKfaGB1yE4wl
+      ybPZWb90J+aHylhXYgdCuMM2fvrTH9FysZkHd+5Br93NEsfV7yNJcXy+INalFhRE8c9DSuUn
+      INnxer0YrBXoVCqKV2xk184qztfNYTR6UWXryFq2hZ3lKSIJK6nRXnxqDQatjuHuega8+1jr
+      uGHTBJmbj8Z+/++M5wBFlgS1bWNs2rIedSKNVm9Cq1ahVKpQK1IM9fczOjyN1pHL9od2Ex7s
+      IaRWMDU6jC8YA7REAy4G+/vwxm6SNCWs2fooupAbTzDF3PQQ7R09xJJQtXYbS7UBBjxhTCYz
+      KrXqqg02GI2oNDpMBh0qhYKJkW4U9ip2bakmcf2PUgoCAK9UV+EwGNCrVZnLoaV0ksHuNibm
+      4mzYuhkpHMKWncW8z4fdaqC9qQl9YRVVRWZam5sxFVVTsySbzqZGsio3UJZrIjznpKlrmAce
+      3IxdGcSvzOF3T0+PR0PEUypMBjWX2xoJavPYULOMK231xFRZLKuuwjfcwWRIx5b1qwiHgmRl
+      6fHOpdCpoqiNekJRNSZdGlCTCgbAoqenqRlbQQn5JZXYvsWT2kU5tDzMhsN4o1FxP8C1RADk
+      RQyDCrImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyljEAiYif00c/5I0332Fs
+      NnzDeUZazjJxg0njHaf557c/JhhN4hkbYD4u4Rlqp6l/ClIBBofd31kDBOF2zYRC/Ncz5zhw
+      5OitlkOnudJ8mrr2IVbveJyaPIlPPz3F7FyY51ftRkqnuHj8Q65Mxdn19FOcPXyUUMnDACRS
+      IdxOH76xOULKAAGVjYC6hObaQ7T3e9j9wgH8w+1MDHnY8dI+8o3aO/hRCHJ0++XQ+Ttw2LP5
+      8V8+zMW6RoYW4jzy0o8J9V0EIJ10gnULP95jp6FljEef2od29W7MetBm5zE6PkFaZaFAFaXD
+      E2HVKgvTRiPp+BTNHWPoZsZ4aN/L5ImdX7gDbr8cWtIQ97kYHBzAH06gVUiMDA0yPD791Vos
+      +GZ6GezrJqE2XbUerc1BpKsRZUkleSVmRge8GLVx+kZ9PLJ3F1bAsayKApsBxR+luYJwtW9R
+      Dr0VTWSG1o5BVm3aTrY2RnNjC8bcEipXVGJQSsyMXabPFWHLpvWkwz6U5hz0X92RNTU2grmg
+      FIMUwTkXoqwoj5HeVuZSBsoLy1GrkmRn2+/Kh3EtUQ0qD6IcOgMRAHkRw6CCrIkACLImAiDI
+      mgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqxlLoeOhkmkQZJSRCKxq6YtuFy4Q6HrlpGSMcZG
+      hhkeHSeWTF81LRqcZ2R4GG8gjHTdkplNjA8TjcUJh6K3sZQg3JqMAXB2NzEVBUkK0Np8Bf/M
+      GGdqa5mejxLxePBFowRmRjl7rh5/ZPFBnKGxPs5f6mRkdIxYMoZzbBaAZHCKY5/VMjjYz+W+
+      EaKBOYJJCATmScSTDHQ0cL6pk3giidczzaXOLqKxCJe+PEdtXRORaAzX1DRh3xTnTp9mzB0g
+      5Pcx0NPCl229JNMpLrdepL13hPTtpEuQvYwBiASmee/1X/Cr195kOgqJZJrikiJamxsXZ0in
+      qW9ooTDPxMX6NgCm3VO4R0aIKcwYdRostsXfCXANu9jw6B5sUohZb4jAcBfjYRge6icUiqPU
+      mbAsjNPt9PL+228QkgwMttQRMTjIzTIhpRTMzc0QiycoLC6ks7WNie4GrnhSJP3DOK9com1G
+      iVGVIJ7O1CJBuF7GABisBfzwr/+On/3dTynQJ7nc0siZL07RNeQCQCKN2V5A5fJqzNokAOUb
+      dvOf/+EfKNW56Oz3Y81aLI026RXMeBbY9PgzGIIeUkikUinC4TDJ2AznT53nwsXTTM0lWLt9
+      D9vXVDKfULKuporcLMvvy6SHups4XXuKzp5h4rocHty4hrJiB2lLBUuUTuqbWgnFxSFAuHWZ
+      A2DLRq9SoECDPduGxWZBZ3awrqYCrcWCWWfAogxw8OC7WIsqAQh6xvjg7X/j0kSKpWVa+jrH
+      AMiprCE91sobv3qTmM1BVmkpDf/xOh3Ds6h0JswWLeXVGyiwG7Hb7SgU8EBlAb9+8w36nAuo
+      NSpsNhtWqw2NMYv1a6qwWG3oVCoMxiy0UhDXbACTzYFBFHIKt0GUQ19DlEPLixgGFWRNBECQ
+      NREAQdZEAARZEwEQZE0EQJA1EQBB1kQABFkTARBkTVzyFGQplEgQSSYzB2BmoBNF2RocmiC9
+      vbPUrF56/UypKEMTXiqWFN3au8aDHD70ES5PAGvZOn747M5bWuzUJwcZnk1SXr2Bxx7agFop
+      niIqfHtD8/P805eNzEbCmQMQ8XtRpkDSJPB5F+ip/4y6zjGKV21jRV6arostONZtR59UoJkf
+      5Ni5RpKONTy+XM3ZlgEKKjeyxuTmWN80YOTHrxzAYjCz7+WfMNrdiLLoAdrPHKFlYJaNu55C
+      GvuS9kkv2x/aReuZWmLqLA786BVsGtA6lvI3zz/M5XNfMOjx47x4hL4JP4+99GeEPVNkK930
+      +PJZU5wg7A3xWVsvmrSS7+3/AeUOU6YmCjL1bk8v/T4fAKpXX3311d9NSKbSpL+qjZvqa+A3
+      n5+np60ZyVaAVp3D8y88Q2RimFDUR/6qPWyqyWVo0M2aLQ9i0OrYsX07E64pnn/hRRL+YaJe
+      NRv2v4BDGcFqcaDXq/BNXMGjLGR5bpLDR84iKdLMRkAR9vHEgR/BbD+lO55nexX0jRsocugY
+      Gx9lyZJlGJJzTEp2VPNOPO5R4rYaNCE3waSKVCJAKpgiL1tLzvo9bC7PIpxUkpNlvq0PR6VU
+      olaJU6M/ZWcnJhj2+4GbnAMs3g/wA0r0PurrRlGERzl+wkUsbWRpSQ4l2SYUisXK0f4Ln9E0
+      mWC1wo4y6uPEiRNEk1qqjUpQ/KG7Eve7+M3RWkqXVZKIllG1ooKERk9uWSWpGTUGnYqk2cS5
+      L46hSQZZ88QqAPyuYU6diOKdj/HoE8WcGAtStXIFUaUah8ZNm7+CdYZJ2lNWqhTijhjh5v6i
+      ZhVjgQVmI+HM5dCJaBi0RtSKFNFoErUigWt6lpyCUjSKJGq1FpUKIuE4yYgft28BvclOQa6R
+      yckZ7PmFGEihMBpJxaKo1VpIx3BOOEmkwWjLJduoYGrGS3ZBMVqS6IxGSKeYnXaR0lgodGQB
+      4HM78QUT5BYUYjFomJt2klTpsFqz0RAlmtJgVCdZSKixaiUSSi0qKUkaJdrbLG0W5dDy8LuT
+      YHE/wDVEAORFdHYFWRMBEGRNBECQNREAQdZEAARZEwEQZE0EQJA1EQBB1kQABFnLGIBYxE8w
+      cvVV4XR4hnfefJsh98J3tgFhn4uztbWMTPlu67Hp95oRv5+ft7ZxsKsbb0Q8yv1+kfGa//zM
+      AD7lKgyRfpqa2ln58PeYr/sFHdOlbA37+O37H6Ev38yjNXm0d7Uz6k5TZI4SsSxn7+ZKLhw/
+      TMC8nKc2L2c2ksRhU+B2K4nPdnC228OLB/Zh0SgYGRmjsLSEzobz5D+7D+N9WIXgj8X4x4v1
+      DM0vVhiOBgL84/ZtKBXivoV73Tfubk2NTTyx/wAN9f3seegRFMpdlGfPo9i4nZH2BgbNq5lS
+      lbC10oVTswOVq4vpgQDGykdYFm6n5YoVNCmyzWpGRxL4p/1sfbCKWCSBRaNl1dqNDPS0U1Tx
+      AHrVnWjyd88dDuMK/uEHQzpnPaQlSQTgPvCN5wCFZSuwGjXo1JqvXlEwOdTL5d4BnLNTxGIa
+      ykoLMGc7KMtzoFZpQAKtXovebEBKpEgkUwQ9s0TSOlbWlDLa38Gwc7EbNdDTiTa3ggfXLON+
+      vdGryGxmhT3r9/9/uKQYldj57wsZjwBGax6gRltcDGgoLnagsFgoVEK+oZiGtj6WrtmOIz8H
+      yaxDTy4qDRQXF+EozaXj06Nc0Zey7/FSLnz2CSeH9axdswzvRDcur5KNj9gAGL3SwnBdE9bC
+      CvY/9wTa+/AoYNJo+G8P7eDsxCQWrZaHiotQiADcF0Q59DVEObS8iGFQQdZEAARZEwEQZE0E
+      QJA1EQBB1kQABFkTARBkTQRAkDURAEHWbisAkbk5IqTxzc0jHkB4tVQ6zYDPx+TCwu+fryrc
+      +zIGwNnViCsi0VH3BdO+AJPTM7i7uvCQpK+rj29XMJGi9fQRXv/lL3jv0BmS33qz7y2pdJqf
+      t7Xz96dq+ZuTpzg2PIwkQnBfyFj0Eg366L1wktziGrIJ0zbro/Br0939Tfz22GmC6uXsXauj
+      uWcSe3E1a42zfD7uJx1T8pNXnuPMoY/xJnQ8vv8A5dkGNjzyLDWbfDS2Xr6vb4D5urHAAsdH
+      Rgknk5CEd3su8/TSpaIi9D6Q8QiQSkZxTvuwmAw3nJ63fAO7Ht7Dz376LFGVjZ/93d+yqkRJ
+      NJnL/p/+JXu2rybpvkz3WJhUZIaxmSCgwD8zTPOlftZu2YLmhmu+/xg0avSqP/6QGCcAAADA
+      SURBVJSxZul0Vz0VW7h3ZQyA1pDF0y++RHSsGVfg+g7PQO1v+PDUBU7Wfoku6edXv/wlvZNp
+      jLo/zKPKWsqKQh1KfRaFdhMQ4fMPDtHZ2cpnR8/yp3LjYIHRyH/asI4yq4XVuTn8w8b1YnTh
+      PpGxHHrxZQVc21G5wUvXr1UBN+gDX/eyQsG99nfy25ZDX9vnF/cD3B8yftN/+AJv8EXeyneb
+      YQf4U90vxA5/fxJHakHWRAAEWRMBEGRNBECQtf8PCUM8W4zR8mMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Jogos por console' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Jogos por gênero 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Jogos por gênero 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
